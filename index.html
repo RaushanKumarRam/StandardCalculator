@@ -1,0 +1,97 @@
+<html>
+     <head>
+	 <style>
+	 
+	 .cl{
+	      background-color:#808000;
+		  color:yellow;
+		  padding:15px 30px;
+		  text-align:center;
+		  font-size:25px;
+		  
+	 }
+	 .tp{
+	 
+	     font-size:30px;
+		 
+	 }
+	 .h{
+	 
+	     background-color:green;
+		 color:white;
+	 }
+	 .cc{
+	        border:3px dashed green;
+	 
+	 }
+	 
+	 </style>
+	   <script>
+	      function ac()
+		  {
+		     document.getElementById("res").value="";
+			
+		  }
+		  function show(input)
+		  {
+		     document.getElementById("res").value+=input;
+		      
+		  
+		  }
+		  function cal()
+		  {
+		    var ouput=  eval(document.getElementById("res").value);
+			document.getElementById("res").value=ouput;
+			
+		  }
+	   
+	   </script>
+	 </head>
+    <body>
+	
+	<table  height=10% width=10% align="center"  cellspacing="5px" cellpadding="5px" class="cc" >
+	    <caption><h1 class="h">Standard Calculator</h1></caption>
+		
+	
+	   <tr>
+	   
+	         <td colspan="3" align="center" bgcolor="black"><input type="text"class="tp" id="res"></td>
+			 <td align="center"><button  class="cl"onclick="ac()">Ac</button></td>
+	   </tr>
+	   <tr>
+	   
+	        <td align="center"><button class="cl" onclick="show('1')">1</button></td>
+			<td align="center"><button class="cl" onclick="show('2')">2</button></td>
+	        <td align="center"><button  class="cl"onclick="show('3')">3</button></td>
+			<td align="center"><button class="cl" onclick="show('+')">+</button></td>
+	   </tr>
+	   <tr>
+	         <td align="center"><button  class="cl"onclick="show('4')">4</button></td>
+			 <td align="center"><button class="cl" onclick="show('5')">5</button></td>
+			 <td align="center"><button class="cl"onclick="show('6')">6</button></td>
+			 <td align="center"><button class="cl" onclick="show('-')">-</button></td>
+	   </tr>
+	   <tr>
+	           <td align="center"><button class="cl"onclick="show('7')">7</button></td>
+			   <td align="center"><button class="cl" onclick="show('8')">8</button></td>
+			   <td align="center"><button class="cl"onclick="show('9')">9</button></td>
+			   <td align="center"><button class="cl"onclick="show('*')">*</button></td>
+	   </tr>
+	   <tr>
+	           <td align="center"><button class="cl" onclick="show('0')">0</button></td>
+			   <td align="center"><button class="cl"onclick="show('%')">%</button></td>
+			   <td align="center"><button class="cl"onclick="show('/')">/</button></td>
+			   <td align="center"><button class="cl"onclick="cal()">=</button></td>
+			   
+	   </tr>
+	   <tr>
+	            <td align="center"><button class="cl" onclick="show('<')"><</button></td>
+			   <td align="center"><button class="cl"onclick="show('<=')"><=</button></td>
+			   <td align="center"><button class="cl"onclick="show('>')">></button></td>
+			   <td align="center"><button class="cl"onclick="cal()">=</button></td>
+			   
+	   
+	   </tr>
+	</table>
+	</body>
+</html>
